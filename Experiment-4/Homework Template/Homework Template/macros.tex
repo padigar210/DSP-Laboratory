@@ -1,0 +1,34 @@
+\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{rem}[thm]{Remark}
+\numberwithin{equation}{section}
+
+\newcommand{\homework}[6]{
+   \pagestyle{myheadings}
+   \thispagestyle{plain}
+   \newpage
+   \setcounter{page}{1}
+   \noindent
+   \begin{center}
+   \framebox{
+      \vbox{\vspace{2mm}
+    \hbox to 6.28in { {\bf EE386 Digital Signal Processing Lab \hfill {\small Jul-Dec 2021}} }
+       \vspace{6mm}
+       \hbox to 6.28in { {\bfseries \Large \hfill #1  \hfill} }
+       \vspace{6mm}
+       \hbox to 6.28in { {\it Author: {\rm enter name here}} \hfill {\small {\it Email:} enter email here}}
+      \vspace{2mm}}
+   }
+   \end{center}
+   \markboth{EE386 -- #1}{EE386 -- #1}
+   \vspace*{4mm}
+}
+
+\newcommand{\problem}[1]{~\\\fbox{\textbf{#1}}}
+\newcommand{\subproblem}[1]{~\newline\textbf{(#1)}}
+\newcommand{\solution}{~\newline\textbf{\textit{(Solution)}} }
